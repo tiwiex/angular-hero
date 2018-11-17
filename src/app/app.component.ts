@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tour of Heros';
+  name = 'Taiwo';
 }
-//todo testing to do
+//TODO testing to do
