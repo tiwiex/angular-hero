@@ -7,6 +7,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { WarningComponent } from './warning.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ServersComponent } from './servers/servers.component';
     ServerComponent,
     HeroesComponent,
     HeroDetailComponent,
-    ServersComponent
+    ServersComponent,
+    WarningComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
