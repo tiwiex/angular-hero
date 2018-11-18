@@ -9,6 +9,7 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningComponent } from './warning.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AdamawaComponent } from './adamawa/adamawa.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MessagesComponent } from './messages/messages.component';
     HeroDetailComponent,
     ServersComponent,
     WarningComponent,
-    MessagesComponent
+    MessagesComponent,
+    AdamawaComponent
   ],
   imports: [
     BrowserModule,
