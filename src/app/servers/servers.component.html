@@ -3,6 +3,10 @@
 type="text"
 class="form-control"
 [(ngModel)]="serverName">
+
+<button class="btn btn-primary"
+[disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
 <p>{{ serverName }}</p>
 <div *ngIf="serverName; else noServer">
     <button class="btn btn-primary" 
@@ -16,5 +20,5 @@ class="form-control"
 </ng-template>
 <p [ngStyle]="{backgroundColor : getColor()}">{{ serverCreationStatus }}  {{serverStatus}}<br></p>
 <p>{{ serverCreationStatus }}  {{serverStatus}}<br></p>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
 <app-server></app-server>

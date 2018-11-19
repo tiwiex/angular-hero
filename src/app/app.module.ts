@@ -11,6 +11,7 @@ import { WarningComponent } from './warning.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AdamawaComponent } from './adamawa/adamawa.component';
 import { ResetuserComponent } from './resetuser/resetuser.component';
+import { Ass1bindingComponent } from './ass1binding/ass1binding.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResetuserComponent } from './resetuser/resetuser.component';
     WarningComponent,
     MessagesComponent,
     AdamawaComponent,
-    ResetuserComponent
+    ResetuserComponent,
+    Ass1bindingComponent
   ],
   imports: [
     BrowserModule,
