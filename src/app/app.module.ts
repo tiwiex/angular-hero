@@ -10,6 +10,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningComponent } from './warning.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AdamawaComponent } from './adamawa/adamawa.component';
+import { ResetuserComponent } from './resetuser/resetuser.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AdamawaComponent } from './adamawa/adamawa.component';
     ServersComponent,
     WarningComponent,
     MessagesComponent,
-    AdamawaComponent
+    AdamawaComponent,
+    ResetuserComponent
   ],
   imports: [
     BrowserModule,

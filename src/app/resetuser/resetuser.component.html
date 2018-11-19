@@ -1,0 +1,27 @@
+<label>User Name Mine </label>
+<input 
+type="text"
+class="form-control"
+[(ngModel)]="userName">
+<p>{{ userName }}</p>
+<div *ngIf="userName; else noServer">
+    <button class="btn btn-primary" 
+    [disabled] = "!allowNewServer"
+    (click)="onClearField()">Clear Field</button><br>
+</div>
+<ng-template #noServer>
+    <button class="btn btn-primary" 
+    disabled = "true"
+    (click)="onClearField()">Clear Field</button><br>
+</ng-template>
+
+<label>Username Solution</label>
+<input 
+type="text"
+class="form-control"
+[(ngModel)]="userName">
+<p>{{ userName }}</p>
+    <button class="btn btn-primary" 
+    [disabled] = "userName === ''"
+    (click)="userName=''">
+    Clear Field</button><br>

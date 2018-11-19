@@ -1,3 +1,19 @@
-<button class="btn btn-primary" [disabled] = "allowNewServer">Add Server</button><br>
+<label>Server Name </label>
+<input 
+type="text"
+class="form-control"
+[(ngModel)]="serverName">
+<p>{{ serverName }}</p>
+<div *ngIf="serverName; else noServer">
+    <button class="btn btn-primary" 
+    [disabled] = "!allowNewServer"
+    (click)="onClearField()">Clear Field</button><br>
+</div>
+<ng-template #noServer>
+    <button class="btn btn-primary" 
+    disabled = "true"
+    (click)="onClearFilear">Clear Field</button><br>
+</ng-template>
+{{ serverCreationStatus }}<br>
 <app-server></app-server>
 <app-server></app-server>
