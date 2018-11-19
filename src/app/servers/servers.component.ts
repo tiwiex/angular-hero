@@ -9,12 +9,15 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = "No Server Was Created";
   serverName ='';
+  serverStatus = 'offline';
 
   constructor() {
     setTimeout(() => {
     this.allowNewServer = true;
     
     }, 2000); 
+
+    this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
 
 
   }
@@ -33,6 +36,10 @@ export class ServersComponent implements OnInit {
   }
   onClearField(){
     this.serverName = '';
+  }
+
+  getColor(){
+    return this.serverStatus === 'online' ? 'green' : 'red';
   }
 
 

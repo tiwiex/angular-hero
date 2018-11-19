@@ -12,8 +12,9 @@ class="form-control"
 <ng-template #noServer>
     <button class="btn btn-primary" 
     disabled = "true"
-    (click)="onClearFilear">Clear Field</button><br>
+    (click)="onClearField">Clear Field</button><br>
 </ng-template>
-{{ serverCreationStatus }}<br>
+<p [ngStyle]="{backgroundColor : getColor()}">{{ serverCreationStatus }}  {{serverStatus}}<br></p>
+<p>{{ serverCreationStatus }}  {{serverStatus}}<br></p>
 <app-server></app-server>
 <app-server></app-server>
